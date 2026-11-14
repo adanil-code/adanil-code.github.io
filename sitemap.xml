@@ -5,34 +5,4 @@
     <lastmod>2026-11-14</lastmod>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://github.com/adanil-code/KmSharedPtr</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://github.com/adanil-code/KmStrSearch</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://github.com/adanil-code/StringPatternMatch</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://github.com/adanil-code/LRUHashTable</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://github.com/adanil-code/OptimisticCache</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://github.com/adanil-code/KmStringPatternMatch</loc>
-    <lastmod>2026-11-14</lastmod>
-    <priority>0.8</priority>
-  </url>
 </urlset>
