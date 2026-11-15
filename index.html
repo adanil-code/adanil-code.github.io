@@ -3,47 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Open-source repositories by adanil-code, featuring string pattern matching, shared pointers, LRU hash tables, and optimistic caching libraries." />
-  <title>Open Source Projects</title>
+  <title>adanil-code — Open Source C++ &amp; Systems Libraries</title>
+  <meta name="description" content="Open-source C++ and systems programming repositories by adanil-code, covering smart pointers, string pattern matching, LRU hash tables, and optimistic caching." />
   <link rel="canonical" href="https://adanil-code.github.io/" />
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 820px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
-    .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
-    h2 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 820px; margin: 2.5rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1f2328; }
+    header { border-bottom: 1px solid #d0d7de; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+    article { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #eaeef2; }
+    h2 { margin: 0 0 0.35rem 0; font-size: 1.2rem; }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { font-size: 0.85rem; color: #57606a; }
   </style>
 </head>
 <body>
-  <h1>Open Source Projects</h1>
-  <p>Curated directory of open-source repositories.</p>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/KmSharedPtr" rel="noopener">adanil-code/KmSharedPtr</a></h2>
-      <p>Header-only C++20 lock-free shared pointers for Windows kernel drivers (x64 &amp; ARM64, IRQL &lt;= DISPATCH_LEVEL). Features DPC-based Quiescent State RCU, Epoch-based cache-aware Rundown with NUMA-sharded O(1) batch GC, and a 128-bit split-count atomic shared_ptr—eliminating per-object read-path RMWs and cache-line contention.</p>
-      <small>Topics: arm64,atomic,concurrency,cpp20,driver-development,lock-free,numa,numa-aware,rcu,shared-ptr,wdm,windows-kernel,x64 | Stars: 0</small>
+  <header>
+    <h1>Open Source Projects by adanil-code</h1>
+    <p>A curated directory of open-source systems programming libraries, data structures, and high-performance string search implementations hosted on GitHub.</p>
+  </header>
+
+  <main>
+    <article>
+      <h2><a href="https://github.com/adanil-code/KmSharedPtr">KmSharedPtr</a></h2>
+      <p>Reference-counted smart pointer implementation designed for safe, deterministic memory management in kernel-mode and low-level systems environments.</p>
+      <div class="meta">Repository: github.com/adanil-code/KmSharedPtr</div>
     </article>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/LRUHashTable" rel="noopener">adanil-code/LRUHashTable</a></h2>
-      <p>A cross-platform, multi-core optimized C++20 LRU Hash Table featuring zero runtime allocations, custom TTAS spinlocks, and Windows Kernel support.</p>
-      <small>Topics: cache-alignment,concurrency,cross-platform,header-only,high-performance,lock-free,lru-algorithm,lru-cache,lru-implementation,lrucache,multithreading,numa,system-programming,systems-programming,wdm,windows-kernel | Stars: 14</small>
+
+    <article>
+      <h2><a href="https://github.com/adanil-code/LRUHashTable">LRUHashTable</a></h2>
+      <p>Combined hash table and doubly-linked list structure providing O(1) lookup, insertion, and Least Recently Used (LRU) cache eviction.</p>
+      <div class="meta">Repository: github.com/adanil-code/LRUHashTable</div>
     </article>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/OptimisticCache" rel="noopener">adanil-code/OptimisticCache</a></h2>
-      <p>An allocation-free, ultra-low-latency C++20 concurrent cache for multi-platform User-Mode and the Windows Kernel (WDM/KMDF). Utilizes SeqLocks and NUMA sharding to deliver wait-free, nanosecond reads.</p>
-      <small>Topics: c-plus-plus,cache,cache-alignment,concurrency,concurrent-programming,cpp20,cross-platform,header-only,lock-free,low-latency,multithreading,numa,seqlock,systems-programming,ultra-low-latency,wait-free,wdm,windows-kernel | Stars: 2</small>
+
+    <article>
+      <h2><a href="https://github.com/adanil-code/OptimisticCache">OptimisticCache</a></h2>
+      <p>Concurrent caching implementation using optimistic synchronization techniques to minimize lock contention under read-heavy workloads.</p>
+      <div class="meta">Repository: github.com/adanil-code/OptimisticCache</div>
     </article>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/StringPatternMatch" rel="noopener">adanil-code/StringPatternMatch</a></h2>
-      <p>Header-only C++20 multi-pattern string matching engine for cross-platform apps (Windows/Linux/macOS). Features runtime SIMD dispatch (AVX-512/AVX2/NEON), 4096-bit existence filtering, non-recursive wildcards, and zero search-time heap allocations for high-throughput telemetry.</p>
-      <small>Topics: avx-512,avx2,cpp20,cross-platform,header-only,high-performance,high-throughput,multi-pattern,neon,pattern-matching,prefix-search,simd,string-matching | Stars: 0</small>
+
+    <article>
+      <h2><a href="https://github.com/adanil-code/StringPatternMatch">StringPatternMatch</a></h2>
+      <p>General-purpose pattern matching algorithms and utilities for fast substring and wildcard evaluation in C++ applications.</p>
+      <div class="meta">Repository: github.com/adanil-code/StringPatternMatch</div>
     </article>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/KmStringPatternMatch" rel="noopener">adanil-code/KmStringPatternMatch</a></h2>
-      <p>High-performance C++20 multi-pattern string matching engine for Windows kernel drivers (x64/ARM64). Evaluates thousands of rules in a single pass with zero search-time pool allocations, non-recursive stack-safe wildcards, 64-bit SWAR, and path scoping for minifilters.</p>
-      <small>Topics: arm64,cpp20,driver-development,high-performance,kernel-mode,multi-pattern,pattern-matching,string-matching,wildcard-matching,wildcard-searches,windows-kernel,x64,zero-allocation | Stars: 0</small>
+    
+    <article>
+      <h2><a href="https://github.com/adanil-code/KmStringPatternMatch">KmStringPatternMatch</a></h2>
+      <p>Kernel-compatible string pattern matching library supporting wildcard and structured sequence matching with predictable memory usage.</p>
+      <div class="meta">Repository: github.com/adanil-code/KmStringPatternMatch</div>
     </article>
-    <article class="card">
-      <h2><a href="https://github.com/adanil-code/KmStrSearch" rel="noopener">adanil-code/KmStrSearch</a></h2>
-      <p>A C++20 project exploring high-performance UTF-8 and UTF-16 substring searching in the Windows kernel. It combines Boyer-Moore-Horspool, SWAR, and SIMD (AVX2/AVX512/NEON) with dynamic routing to mitigate processor state-save overheads, optimizing throughput across varying buffer sizes.</p>
-      <small>Topics: arm64,avx-512,avx2,avx512,bit-parallel,boyer-moore-horspool,cpp20,high-performance,neon,ring-0,simd,substring-search,swar,vectorization,windows-kernel,windows-kernel-development,windows-kernel-driver | Stars: 0</small>
+
+    <article>
+      <h2><a href="https://github.com/adanil-code/KmStrSearch">KmStrSearch</a></h2>
+      <p>Lightweight string searching utilities built for low-overhead environments without standard user-mode runtime dependencies.</p>
+      <div class="meta">Repository: github.com/adanil-code/KmStrSearch</div>
     </article>
+    
+  </main>
 </body>
 </html>
